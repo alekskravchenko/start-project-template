@@ -1,0 +1,54 @@
+@import "bourbon"
+@import "_vars.sass"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+.placeholder-block
+	background-image: url(../images/bg-placeholder.jpg)
+	background-repeat: no-repeat
+	background-position: center
+	height: 100vh
+	vertical-align: middle
+	display: inline-block
+	width: 100%
+	font-size: 0
+	&:before
+		height: 100%
+		content: ''
+		width: 0
+		display: inline-block
+		vertical-align: middle
+	h1
+		display: inline-block
+		font-size: 40px
+		vertical-align: middle
+		font-weight: 300
+		width: 100%
+		line-height: 80px
+		color: #fff
+		text-align: center
+		background-color: rgba(9,9,9,.8)
+
+
+@import "_media.sass"
